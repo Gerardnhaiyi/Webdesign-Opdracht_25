@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <link 
+      rel="stylesheet" 
+      type="text/css" 
+      href="../CSS/ci.css" 
+    />
+    <meta 
+      name="viewport" 
+      content="width=device-width, initial-scale=1"
+    >
+    <!-- Bootstrap-CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    >
+    <title>
+      contact pagina
+    </title>
+  </head>
+  <body>
+    <div 
+      class="container"
+    >
+      <div 
+        class="col-xs"
+      >
+      <div class="col-xs">
+        <div 
+          class="col-12" 
+          style="padding-top: 15px; text-align: center;	background-color: blue;"
+        >
+          <ul>
+            <a href= "../index.html">
+              <li>
+                Home
+              </li>
+            </a>
+          </ul>
+        </div>
+        <h1>
+          Opdracht Informatie
+        </h1>
+        <p>
+          Vul uw contact gegevens in en ik zal zo snel mogelijk met u een afspraak maken. 
+        </p>
+        <form
+          action="https://formspree.io/f/mnqynwgv"
+          method="POST"
+        >
+          <!-- De invoer velden -->
+          <input 
+            type="text" 
+            name="voornaam" 
+            placeholder="Uw voornaam" 
+          />
+          <input 
+            type="text" 
+            name="achternaam" 
+            placeholder="Uw achternaam" 
+          />
+          <input 
+            type="text" 
+            name="adres" 
+            placeholder="Uw adres" 
+          />
+          <input 
+            type="text" 
+            name="woonplaats" 
+            placeholder="Uw woonplaats" 
+          />
+          <input 
+            type="date" 
+            name="datum" 
+            placeholder="Uw geboorte datum" 
+          />
+          <input 
+            type="tel" 
+            name="telefoonnummer" 
+            placeholder="telefoonnummer" 
+          />
+          <input 
+            type="email" 
+            name="e-mailadres" 
+            placeholder="Uw e-mailadres"
+          />
+          <!-- Selector -->
+          <label for="bewerking">
+            Kies een bewerking:
+          </label>
+          <select name="bewerking" id="bewerking">
+            <option value="Embedded_Design">
+              Embedded Design
+            </option>
+            <option value="Embedded_Programming">
+              Embedded Programming
+            </option>
+            <option value="C_Sharp_Programming">
+              C# Programming
+            </option>
+            <option value="Web_Design">
+              Web Design
+            </option>
+            <option value="Print">
+              3D Printing
+            </option>
+            <option value="Klussen">
+              Klussen
+            </option>
+          </select>
+          <!-- De boodschap -->
+          <textarea 
+            name="boodschap" 
+            placeholder="Uw boodschap"
+          >
+          </textarea>
+          <!-- verzend button -->
+          <button>
+            Verzend gegevens
+          </button>
+        </form>
+        <footer>
+          <h6>
+            &#169 Copywrite: GGT Nesselaar
+          </h6>
+        </footer>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    >
+    </script>
+  </body>
+</html>
